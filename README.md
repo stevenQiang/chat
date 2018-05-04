@@ -8,6 +8,10 @@
 
 open http://localhost:8080/
 
+## Docker
+    docker build -t chat .
+    docker run -p 8080:8080 chat
+
 ## TODO LIST
 
 - [x] dockerfile
