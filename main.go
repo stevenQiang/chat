@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"github.com/gorilla/mux"
+	"chat/db"
 )
 
 var addr = flag.String("port", ":8080", "http service address")
@@ -37,6 +38,8 @@ func loginPage(w http.ResponseWriter, r *http.Request) {
 var router = mux.NewRouter()
 
 func main() {
+	db := db.InitDB()
+	defer db.Close()
 	flag.Parse()
 	go hub.run()
 	router.HandleFunc("/", indexPage).Methods("GET")
