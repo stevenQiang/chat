@@ -15,8 +15,8 @@ open http://localhost:8080/
 ## TODO LIST
 
 - [x] dockerfile
-- [x] 消息提醒
-- [] 数据存储
+- [] 消息提醒
+- [x] 数据存储
 - [] 房间分隔
 - [] 房间密码
 - [] 在线人数
