@@ -8,6 +8,11 @@
 
 open http://localhost:8080/
 
+## Technology Stack
+* [mux](https://github.com/gorilla/mux)
+* [gorm](https://github.com/jinzhu/gorm)
+* [securecookie](https://github.com/gorilla/securecookie)
+* [websocket](https://github.com/gorilla/websocket)
 ## Docker
     docker build -t chat .
     docker run -p 8080:8080 chat
@@ -15,8 +20,8 @@ open http://localhost:8080/
 ## TODO LIST
 
 - [x] dockerfile
-- [] 消息提醒
+- [ ] 消息提醒
 - [x] 数据存储
-- [] 房间分隔
-- [] 房间密码
-- [] 在线人数
+- [ ] 房间分隔
+- [ ] 房间密码
+- [ ] 在线人数
